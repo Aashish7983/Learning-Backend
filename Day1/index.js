@@ -1,5 +1,17 @@
-let a = 10;
-let b = 20;
+const a = 20;
 
-// How to export
-module.exports = a;
+const add = (a, b)=>{
+    return a+b;
+}
+const sub = (a, b)=>{
+    return a-b;
+}
+const prod = (a, b)=>{
+    return a*b;
+}
+const div = (a, b)=>{
+    return a/b;
+}
+
+// exporting
+module.exports = {add, sub, prod, div};
